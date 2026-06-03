@@ -1,16 +1,76 @@
-# React + Vite
+# Spacea
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Spacea is an AI-powered Air-BNBinterior design platform that helps users discover design inspirations, explore different interior styles, and plan personalized living spaces. The platform provides room transformation ideas, design recommendations, and style exploration features through a modern and responsive user interface.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Explore multiple interior design styles
+- View before-and-after room transformations
+- Personalized design planning experience
+- Modern and responsive user interface
+- Contact and inquiry section
+- Interactive design inspiration gallery
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- Vite
+- Tailwind CSS
+- JavaScript
 
-## Expanding the ESLint configuration
+## Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+src/
+├── assets/
+├── components/
+├── pages/
+├── App.jsx
+├── main.jsx
+
+public/
+```
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/PurabhiPa11/Spacea.git
+```
+
+Navigate to the project directory:
+
+```bash
+cd Spacea
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+## Build for Production
+
+```bash
+npm run build
+```
+
+## Future Enhancements
+
+- AI-generated interior design suggestions
+- User authentication
+- Saved design collections
+- Real-time room visualization
+- Design budget estimation
+
+## License
+
+This project is for educational and portfolio purposes.
