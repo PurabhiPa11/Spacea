@@ -71,6 +71,10 @@ npm run build
 - Real-time room visualization
 - Design budget estimation
 
+## Live Demo
+
+https://spacea-gray.vercel.app
+
 ## License
 
 This project is for educational and portfolio purposes.
