@@ -28,7 +28,7 @@ function Transformations() {
       <Navbar />
 
       {/* HERO SECTION */}
-      <section className="relative h-[1180px] overflow-hidden">
+      <section className="relative min-h-screen md:h-[1180px] overflow-hidden">
 
         {/* BACKGROUND IMAGE */}
         <img
@@ -46,14 +46,14 @@ function Transformations() {
           </p>
 
           {/* HEADING */}
-          <h1 className="max-w-[560px] mt-10 text-[58px] md:text-[96px] leading-[92%] tracking-[-3px] text-[#5B5551] font-['Playfair_Display'] font-medium">
+          <h1 className="max-w-[560px] mt-10 text-[42px] sm:text-[58px] md:text-[96px] leading-[92%] tracking-[-3px] text-[#5B5551] font-['Playfair_Display'] font-medium">
             Transformations
             That Redefine
             Spaces
           </h1>
 
           {/* PARAGRAPH */}
-          <p className="w-[390px] mt-10 text-[#70675F] text-[22px] leading-[150%]">
+          <p className="w-full max-w-[390px] mt-8 md:mt-10 text-[#70675F] text-[22px] leading-[150%]">
             Thoughtful design. Intentional details.
             Unforgettable guest experiences.
           </p>
@@ -67,8 +67,20 @@ function Transformations() {
           <motion.div
             whileHover={{ y: -8 }}
             transition={{ duration: 0.4 }}
-            className="absolute right-[180px] top-[240px] w-[520px] h-[700px] overflow-hidden rounded-t-[260px] shadow-[0_30px_90px_rgba(0,0,0,0.12)]"
-          >
+            className="relative lg:absolute
+            mx-auto md:mx-0
+            mt-12 md:mt-0
+            lg:right-[180px]
+            lg:top-[240px]
+            w-full
+            max-w-[420px]
+            md:max-w-[520px]
+            h-[500px]
+            md:h-[700px]
+            overflow-hidden
+            rounded-t-[220px]
+            md:rounded-t-[260px]
+            shadow-[0_30px_90px_rgba(0,0,0,0.12)]">
 
             <img
               src={heroArch}
@@ -82,10 +94,26 @@ function Transformations() {
           <motion.div
             whileHover={{ y: -8, scale: 1.03 }}
             transition={{ duration: 0.4 }}
-            className="absolute right-[160px] top-[860px] w-[340px] h-[150px] bg-[#F4EEE7]/80 border border-white/30 rounded-[40px] px-10 flex items-center shadow-[0_18px_50px_rgba(0,0,0,0.08)]"
-          >
+            className="
+            relative lg:absolute
+            mx-auto
+            mt-8
+            md:mt-0
+            lg:right-[160px]
+            lg:top-[860px]
+            w-full
+            max-w-[340px]
+            h-auto
+            min-h-[150px]
+            bg-[#F4EEE7]/80
+            border border-white/30
+            rounded-[40px]
+            px-8 md:px-10
+            py-6
+            flex items-center
+            shadow-[0_18px_50px_rgba(0,0,0,0.08)]">
 
-            <p className="text-[#5B5551] text-[32px] leading-[110%] font-medium tracking-[-2%] font-['Cormorant_Garamond']">
+            <p className="text-[#5B5551] text-[24px] md:text-[32px] leading-[110%] font-medium tracking-[-2%] font-['Cormorant_Garamond']">
               Where thoughtful
               design meets comfort.
             </p>
@@ -160,7 +188,7 @@ function Transformations() {
             {/* LEFT */}
             <div>
 
-              <h2 className="text-[#5B5551] text-[42px] font-medium font-['Cormorant_Garamond']">
+              <h2 className="text-[#5B5551] text-[32px] md:text-[42px] font-medium font-['Cormorant_Garamond']">
                 Coastal Retreat
               </h2>
 
@@ -179,7 +207,7 @@ function Transformations() {
             {/* RIGHT */}
             <div>
 
-              <h3 className="text-[#5B5551] text-[64px] leading-[100%] font-['Cormorant_Garamond']">
+              <h3 className="text-[#5B5551] text-[42px] md:text-[64px] leading-[100%] font-['Cormorant_Garamond']">
                 Luxury
               </h3>
 
@@ -219,7 +247,7 @@ function Transformations() {
               />
             </div>
 
-            <h3 className="mt-8 text-[#5B5551] text-[36px] font-medium font-['Cormorant_Garamond']">
+            <h3 className="mt-8 text-[#5B5551] text-[28px] md:text-[36px] font-medium font-['Cormorant_Garamond']">
               Airbnb Makeover
             </h3>
 
@@ -248,7 +276,7 @@ function Transformations() {
               />
             </div>
 
-            <h3 className="mt-8 text-[#5B5551] text-[36px] font-medium font-['Cormorant_Garamond']">
+            <h3 className="mt-8 text-[#5B5551] text-[28px] md:text-[36px] font-medium font-['Cormorant_Garamond']">
               Modern Escape
             </h3>
 
@@ -277,7 +305,7 @@ function Transformations() {
               />
             </div>
 
-            <h3 className="mt-8 text-[#5B5551] text-[36px] font-medium font-['Cormorant_Garamond']">
+            <h3 className="mt-8 text-[#5B5551] text-[28px] md:text-[36px] font-medium font-['Cormorant_Garamond']">
               Earthy Stay
             </h3>
 
@@ -306,7 +334,7 @@ function Transformations() {
               />
             </div>
 
-            <h3 className="mt-8 text-[#5B5551] text-[36px] font-medium font-['Cormorant_Garamond']">
+            <h3 className="mt-8 text-[#5B5551] text-[28px] md:text-[36px] font-medium font-['Cormorant_Garamond']">
               Boutique Living
             </h3>
 
@@ -337,7 +365,7 @@ function Transformations() {
 
             {/* BLOCK 1 */}
             <div>
-              <h3 className="text-[#5B5551] text-[36px] font-medium font-['Cormorant_Garamond']">
+              <h3 className="text-[#5B5551] text-[28px] md:text-[36px] font-medium font-['Cormorant_Garamond']">
                 Thoughtful Styling
               </h3>
 
@@ -349,7 +377,7 @@ function Transformations() {
 
             {/* BLOCK 2 */}
             <div>
-              <h3 className="text-[#5B5551] text-[36px] font-medium font-['Cormorant_Garamond']">
+              <h3 className="text-[#5B5551] text-[28px] md:text-[36px] font-medium font-['Cormorant_Garamond']">
                 Warm Aesthetics
               </h3>
 
@@ -361,7 +389,7 @@ function Transformations() {
 
             {/* BLOCK 3 */}
             <div>
-              <h3 className="text-[#5B5551] text-[36px] font-medium font-['Cormorant_Garamond']">
+              <h3 className="text-[#5B5551] text-[28px] md:text-[36px] font-medium font-['Cormorant_Garamond']">
                 Guest Experience
               </h3>
 
@@ -373,7 +401,7 @@ function Transformations() {
 
             {/* BLOCK 4 */}
             <div>
-              <h3 className="text-[#5B5551] text-[36px] font-medium font-['Cormorant_Garamond']">
+              <h3 className="text-[#5B5551] text-[28px] md:text-[36px] font-medium font-['Cormorant_Garamond']">
                 Elevated Living
               </h3>
 

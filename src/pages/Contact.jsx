@@ -87,30 +87,30 @@ function Contact() {
           </div>
 
           {/* FLOATING GLASS CARDS */}
-          <div className="hidden lg:flex absolute right-[130px] top-[160px] flex-col gap-8">
+          <div className="hidden xl:flex absolute right-[80px] top-[180px] flex-col gap-8">
 
             {/* CARD 1 */}
-            <div className="w-[320px] h-[140px] flex items-center justify-center backdrop-blur-[30px] bg-white/8 border border-white/20 rounded-[28px] px-10 shadow-[0_18px_50px_rgba(0,0,0,0.10)] hover:-translate-y-2 hover:scale-105 hover:bg-white/12 transition-all duration-500 cursor-pointer">
+            <div className="w-[260px] xl:w-[320px] h-[120px] xl:h-[140px] flex items-center justify-center backdrop-blur-[30px] bg-white/8 border border-white/20 rounded-[28px] px-10 shadow-[0_18px_50px_rgba(0,0,0,0.10)] hover:-translate-y-2 hover:scale-105 hover:bg-white/12 transition-all duration-500 cursor-pointer">
 
-              <h3 className="text-[#5B5551] text-[34px] font-['Playfair_Display']">
+              <h3 className="text-[#5B5551] text-[28px] xl:text-[34px] font-['Playfair_Display']">
                 Luxury styling.
               </h3>
 
             </div>
 
             {/* CARD 2 */}
-            <div className="w-[320px] h-[140px] flex items-center justify-center backdrop-blur-[30px] bg-white/8 border border-white/20 rounded-[28px] px-10 shadow-[0_18px_50px_rgba(0,0,0,0.10)] hover:-translate-y-2 hover:scale-105 hover:bg-white/12 transition-all duration-500 cursor-pointer ml-[-40px]">
+            <div className="w-[260px] xl:w-[320px] h-[120px] xl:h-[140px] flex items-center justify-center backdrop-blur-[30px] bg-white/8 border border-white/20 rounded-[28px] px-10 shadow-[0_18px_50px_rgba(0,0,0,0.10)] hover:-translate-y-2 hover:scale-105 hover:bg-white/12 transition-all duration-500 cursor-pointer ml-[-40px]">
 
-              <h3 className="text-[#5B5551] text-[34px] font-['Playfair_Display']">
+              <h3 className="text-[#5B5551] text-[28px] xl:text-[34px] font-['Playfair_Display']">
                 Curated living.
               </h3>
 
             </div>
 
             {/* CARD 3 */}
-            <div className="w-[320px] h-[140px] flex items-center justify-center backdrop-blur-[30px] bg-white/8 border border-white/20 rounded-[28px] px-10 shadow-[0_18px_50px_rgba(0,0,0,0.10)] hover:-translate-y-2 hover:scale-105 hover:bg-white/12 transition-all duration-500 cursor-pointer">
+            <div className="w-[260px] xl:w-[320px] h-[120px] xl:h-[140px] flex items-center justify-center backdrop-blur-[30px] bg-white/8 border border-white/20 rounded-[28px] px-10 shadow-[0_18px_50px_rgba(0,0,0,0.10)] hover:-translate-y-2 hover:scale-105 hover:bg-white/12 transition-all duration-500 cursor-pointer">
 
-              <h3 className="text-[#5B5551] text-[34px] font-['Playfair_Display']">
+              <h3 className="text-[#5B5551] text-[28px] xl:text-[34px] font-['Playfair_Display']">
                 Modern stays.
               </h3>
 

@@ -38,34 +38,49 @@ function Explore() {
       <Navbar />
 
       {/* HERO SECTION */}
-      <section className="relative h-[920px] overflow-hidden">
+      <section className="relative min-h-screen lg:h-[920px] overflow-hidden">
 
         {/* LEFT GRADIENT */}
         <div className="absolute inset-0 bg-gradient-to-r from-[#08261D] via-[#12362D] to-[#1E4A3B]" />
 
         {/* HERO CONTENT */}
-        <div className="relative z-20 px-8 md:px-16 pt-[170px] flex">
+        <div className="relative z-20 px-6 md:px-16 pt-[120px] md:pt-[170px] flex flex-col lg:flex-row">
 
           {/* LEFT TEXT */}
-          <div className="w-1/2">
+          <div className="w-full lg:w-1/2">
 
             <p className="text-[#E6DED2] tracking-[0.32em] text-[14px] mb-10 font-medium">
               EXPLORE STAYS
             </p>
 
-            <h1 className="font-serif text-[#F5F1EA] text-[96px] leading-[88px] max-w-[620px]">
+            <h1 className="font-serif text-[#F5F1EA] text-[42px] sm:text-[58px] lg:text-[96px] leading-[100%] lg:leading-[88px] max-w-[620px]">
               Discover spaces
               <br />
               that stay with you.
             </h1>
 
-            <p className="text-[#DDD5CA] text-[24px] leading-[170%] max-w-[480px] mt-12">
+            <p className="text-[#DDD5CA] text-[18px] md:text-[24px] leading-[170%] max-w-[480px] mt-12">
               Handpicked stays in stunning locations,
               curated for your comfort, style and unforgettable experiences.
             </p>
 
             {/* SEARCH BAR */}
-            <div className="mt-14 relative z-40 w-[860px] h-[100px] bg-[#FBF8F3] rounded-full flex items-center justify-between shadow-[0_15px_35px_rgba(0,0,0,0.08)]">
+            <div className="
+             mt-10
+             relative
+             z-40
+             w-full
+             max-w-[860px]
+             bg-[#FBF8F3]
+             rounded-[30px] lg:rounded-full
+             p-6
+             lg:p-0
+             flex
+             flex-col
+             lg:flex-row
+             gap-6
+             lg:gap-0
+             shadow-[0_15px_35px_rgba(0,0,0,0.08)]">
               <div className="flex-1 px-10">
                 <p className="text-[#2D2A27] text-[18px] font-medium">
                   Where to?
@@ -75,7 +90,7 @@ function Explore() {
                 </p>
               </div>
 
-              <div className="w-[1px] h-[60px] bg-[#DDD5CA]" />
+              <div className="hidden lg:block w-[1px] h-[60px] bg-[#DDD5CA]" />
 
               <div className="flex-1 px-10">
                 <p className="text-[#2D2A27] text-[18px] font-medium">
@@ -86,7 +101,7 @@ function Explore() {
                 </p>
               </div>
 
-<div className="w-[1px] h-[60px] bg-[#DDD5CA]" /> 
+              <div className="hidden lg:block w-[1px] h-[60px] bg-[#DDD5CA]" />
               <div className="flex-1 px-10">
                 <p className="text-[#2D2A27] text-[18px] font-medium">
                   Guests
@@ -96,13 +111,13 @@ function Explore() {
                 </p>
               </div>
 
-              <button className="w-[90px] h-[90px] rounded-full bg-[#163B2F] flex items-center justify-center mr-5 hover:scale-105 transition-all duration-300">
+              <button className="w-full lg:w-[90px] h-[60px] lg:h-[90px] rounded-full bg-[#163B2F] flex items-center justify-center mr-5 hover:scale-105 transition-all duration-300">
                 <ArrowRight className="text-white w-7 h-7" />
               </button>
             </div>
 
             {/* TAGS */}
-            <div className="flex gap-5 mt-16 text-[#E4DDD4] text-[15px]">
+            <div className="hidden lg:flex flex-wrap gap-3 md:gap-5 mt-10 md:mt-16">
               <p>Beachfront</p>
               <p>•</p>
               <p>Mountain</p>
@@ -114,9 +129,9 @@ function Explore() {
           </div>
 
           {/* RIGHT HERO IMAGE */}
-          <div className="absolute right-[80px] top-[60px]">
+          <div className="relative lg:absolute mt-10 lg:mt-0 lg:right-[80px] lg:top-[60px]">
 
-            <div className="w-[560px] h-[680px] overflow-hidden rounded-t-[360px] rounded-b-[0px] shadow-[0_35px_70px_rgba(0,0,0,0.30)]">
+            <div className="w-full max-w-[560px] h-[420px] md:h-[520px] lg:h-[680px] overflow-hidden rounded-t-[360px] rounded-b-[0px] shadow-[0_35px_70px_rgba(0,0,0,0.30)]">
               <img
                 src={heroImage}
                 alt=""
@@ -133,13 +148,13 @@ function Explore() {
         {/* CATEGORY SECTION */}
         <div>
 
-          <div className="flex items-center justify-between mb-16">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6 mb-16">
             <div>
               <p className="tracking-[0.30em] text-[13px] text-[#6D665F] mb-5">
                 EXPLORE BY CATEGORY
               </p>
 
-              <h2 className="font-serif text-[56px] text-[#2D2A27]">
+              <h2 className="font-serif text-[36px] md:text-[56px] text-[#2D2A27]">
                 Find your perfect escape
               </h2>
             </div>
@@ -151,7 +166,7 @@ function Explore() {
           </div>
 
           {/* CATEGORY CARDS */}
-          <div className="grid grid-cols-6 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-6">
 
             {[
               {
@@ -214,14 +229,14 @@ function Explore() {
         {/* FEATURED STAYS */}
         <div className="mt-32">
 
-          <div className="flex items-center justify-between mb-16">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6 mb-16">
 
             <div>
               <p className="tracking-[0.30em] text-[13px] text-[#6D665F] mb-5">
                 FEATURED STAYS
               </p>
 
-              <h2 className="font-serif text-[68px] text-[#2D2A27]">
+              <h2 className="font-serif text-[42px] md:text-[68px] text-[#2D2A27]">
                 Handpicked for you
               </h2>
             </div>
@@ -233,7 +248,7 @@ function Explore() {
           </div>
 
           {/* STAY CARDS */}
-          <div className="grid grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
 
             {[
               {
@@ -308,11 +323,11 @@ function Explore() {
         </div>
 
         {/* BOTTOM SECTION */}
-        <div className="grid grid-cols-3 gap-8 mt-32">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-32">
 
           {/* LEFT */}
           <div className="rounded-[34px] bg-[#FBF8F3] p-10 shadow-[0_18px_40px_rgba(0,0,0,0.08)] min-h-[430px]">
-            <h3 className="font-serif text-[54px] leading-[110%]">
+            <h3 className="font-serif text-[36px] md:text-[54px] leading-[110%]">
               Explore India
               <br />
               like never before
@@ -323,7 +338,7 @@ function Explore() {
               mountains, cities and more.
             </p>
 
-            <div className="flex justify-between mt-16">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-16">
 
               <div>
                 <h4 className="text-[42px] font-semibold">120+</h4>
@@ -367,7 +382,7 @@ function Explore() {
 >
   <div className="max-w-[340px]">
 
-    <h3 className="font-serif text-[52px] leading-[105%] text-[#2D2A27]">
+    <h3 className="font-serif text-[36px] md:text-[52px] leading-[105%] text-[#2D2A27]">
       Not sure where to go?
     </h3>
 

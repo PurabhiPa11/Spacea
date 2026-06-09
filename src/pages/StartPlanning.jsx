@@ -61,7 +61,7 @@ function StartPlanning() {
 
       <section className="px-8 md:px-16 pt-20 pb-32">
 
-        <div className="flex items-center justify-between">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
 
           <div className="max-w-[620px]">
 
@@ -69,7 +69,7 @@ function StartPlanning() {
               START PLANNING
             </p>
 
-            <h1 className="font-serif text-[96px] leading-[90%] text-[#2D2A27] mt-8">
+            <h1 className="font-serif text-[42px] sm:text-[60px] lg:text-[96px] leading-[90%] text-[#2D2A27] mt-8">
               Let's transform
               <br />
               your property
@@ -90,7 +90,10 @@ function StartPlanning() {
 
           </div>
 
-          <div className="w-[520px] h-[680px] overflow-hidden rounded-t-[260px] shadow-[0_25px_60px_rgba(0,0,0,0.12)]">
+          <div className="
+           w-full
+           max-w-[520px]
+          h-[280px] sm:h-[420px] md:h-[560px] lg:h-[680px]">
 
             <img
               src={heroImage}
@@ -112,11 +115,11 @@ function StartPlanning() {
           YOUR SPACE
         </p>
 
-        <h2 className="font-serif text-[68px] text-[#2D2A27]">
+        <h2 className="font-serif text-[36px] sm:text-[48px] md:text-[68px] text-[#2D2A27]">
           What are you redesigning?
         </h2>
 
-        <div className="grid grid-cols-4 gap-8 mt-14">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 mt-14">
 
           {[
             "Airbnb",
@@ -157,11 +160,11 @@ function StartPlanning() {
           PROJECT GOALS
         </p>
 
-        <h2 className="font-serif text-[68px] text-[#2D2A27]">
+        <h2 className="font-serif text-[36px] sm:text-[48px] md:text-[68px] text-[#2D2A27]">
           What are you looking for?
         </h2>
 
-        <div className="grid grid-cols-4 gap-8 mt-14">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 mt-14">
 
           {[
             "Increase Bookings",
@@ -197,11 +200,11 @@ function StartPlanning() {
           STYLE PREFERENCES
         </p>
 
-        <h2 className="font-serif text-[68px] text-[#2D2A27]">
+        <h2 className="font-serif text-[36px] sm:text-[48px] md:text-[68px] text-[#2D2A27]">
           Choose your aesthetic
         </h2>
 
-        <div className="grid grid-cols-2 gap-8 mt-14">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-14">
 
           {[
             {
@@ -232,7 +235,7 @@ function StartPlanning() {
               <img
                 src={item.image}
                 alt=""
-                className="w-full h-[320px] object-cover hover:scale-105 transition-all duration-700"
+                className="w-full h-[240px] md:h-[320px] object-cover hover:scale-105 transition-all duration-700"
               />
 
               <div className="p-8">
@@ -255,14 +258,14 @@ function StartPlanning() {
 
       <section className="px-8 md:px-16 pb-28">
 
-        <div className="bg-[#FBF8F3] rounded-[38px] p-20 shadow-[0_18px_40px_rgba(0,0,0,0.06)] text-center">
+        <div className="bg-[#FBF8F3] rounded-[38px] p-8 md:p-20 shadow-[0_18px_40px_rgba(0,0,0,0.06)] text-center">
 
           <Upload
             size={52}
             className="mx-auto text-[#163B2F]"
           />
 
-          <h2 className="font-serif text-[68px] text-[#2D2A27] mt-8">
+          <h2 className="font-serif text-[36px] md:text-[68px] text-[#2D2A27] mt-8">
             Upload Your Space
           </h2>
 
@@ -287,7 +290,7 @@ function StartPlanning() {
           BUDGET RANGE
         </p>
 
-        <h2 className="font-serif text-[68px] text-[#2D2A27]">
+        <h2 className="font-serif text-[36px] sm:text-[48px] md:text-[68px]  text-[#2D2A27]">
           What's your budget?
         </h2>
 
@@ -302,7 +305,7 @@ function StartPlanning() {
 
             <button
               key={index}
-              className="px-10 py-5 rounded-full bg-[#FBF8F3] text-[#2D2A27] shadow-[0_10px_25px_rgba(0,0,0,0.06)] hover:bg-[#163B2F] hover:text-white transition-all duration-300"
+              className="w-full sm:w-auto px-10 py-5 rounded-full bg-[#FBF8F3] text-[#2D2A27] shadow-[0_10px_25px_rgba(0,0,0,0.06)] hover:bg-[#163B2F] hover:text-white transition-all duration-300"
             >
               {item}
             </button>
@@ -317,9 +320,9 @@ function StartPlanning() {
 
       <section className="px-8 md:px-16 pb-28">
 
-        <div className="bg-[#FBF8F3] rounded-[40px] p-16 shadow-[0_20px_50px_rgba(0,0,0,0.06)]">
+        <div className="bg-[#FBF8F3] rounded-[40px] p-8 md:p-16 shadow-[0_20px_50px_rgba(0,0,0,0.06)]">
 
-          <div className="flex justify-between gap-20">
+          <div className="flex flex-col lg:flex-row justify-between gap-12 lg:gap-20">
 
             {/* LEFT */}
 
@@ -329,7 +332,7 @@ function StartPlanning() {
                 CONSULTATION
               </p>
 
-              <h2 className="font-serif text-[68px] leading-[95%] text-[#2D2A27]">
+              <h2 className="font-serif text-[36px] sm:text-[48px] md:text-[68px]  leading-[95%] text-[#2D2A27]">
                 Tell us about your project.
               </h2>
 
@@ -393,7 +396,7 @@ function StartPlanning() {
 
               <button
                 type="submit"
-                className="w-fit bg-[#163B2F] text-white px-8 py-4 rounded-full hover:scale-105 transition-all duration-300"
+                className="w-full sm:w-fit bg-[#163B2F] text-white px-8 py-4 rounded-full hover:scale-105 transition-all duration-300"
               >
                 Submit Project
               </button>
@@ -410,9 +413,9 @@ function StartPlanning() {
 
       <section className="px-8 md:px-16 pb-32">
 
-        <div className="bg-[#163B2F] rounded-[42px] p-20 text-center">
+        <div className="bg-[#163B2F] rounded-[42px] p-8 md:p-20 text-center">
 
-          <h2 className="font-serif text-[76px] leading-[100%] text-white">
+          <h2 className="font-serif text-[40px] md:text-[76px] leading-[100%] text-white">
             Ready to unlock
             <br />
             your property's potential?
@@ -439,7 +442,7 @@ function StartPlanning() {
 
       {submitted && (
 
-        <div className="fixed bottom-8 right-8 bg-[#163B2F] text-white px-6 py-4 rounded-[20px] shadow-[0_10px_30px_rgba(0,0,0,0.15)] z-50">
+        <div className="fixed bottom-4 left-4 right-4 md:left-auto md:right-8 bg-[#163B2F] text-white px-6 py-4 rounded-[20px] shadow-[0_10px_30px_rgba(0,0,0,0.15)] z-50">
 
           Project submitted successfully ✨
 

@@ -12,16 +12,16 @@ function Hero() {
 
       {/* LEFT CONTENT */}
 
-      <div className="max-w-[600px]">
+      <div className="w-full max-w-[600px]">
 
-        <h1 className="text-[52px] md:text-[78px] leading-[95%] text-[#5B5551] font-['Playfair_Display'] tracking-[-2px]">
+        <h1 className="text-[36px] sm:text-[48px] md:text-[78px] leading-[100%] md:leading-[95%] text-[#5B5551] font-['Playfair_Display'] tracking-[-2px]">
           Transform <br />
           Properties <br />
           Into <br />
           Experiences
         </h1>
 
-        <p className="mt-8 text-[#707B84] text-[20px] leading-[32px] max-w-[500px]">
+        <p className="mt-6 md:mt-8 text-[#707B84] text-[18px] md:text-[20px] leading-[30px] md:leading-[32px] max-w-[500px]">
           Luxury Airbnb transformation platform helping owners redesign,
           optimize, and elevate their spaces.
         </p>
@@ -42,12 +42,12 @@ function Hero() {
 
       {/* RIGHT IMAGE */}
 
-      <div className="relative">
+      <div className="relative w-full flex justify-center">
 
         <img
           src={heroImage}
           alt="Luxury Interior"
-          className="w-[450px] h-[620px] rounded-[40px] object-cover shadow-[0_30px_80px_rgba(0,0,0,0.16)] hover:scale-[1.03] transition-all duration-500"
+          className="w-full max-w-[450px] h-[420px] md:h-[620px] rounded-[40px] object-cover shadow-[0_30px_80px_rgba(0,0,0,0.16)] hover:scale-[1.03] transition-all duration-500"
           will-change-transform
         />
 
