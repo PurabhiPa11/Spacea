@@ -59,9 +59,15 @@ function Transformations() {
           </p>
 
           {/* BUTTON */}
-          <button className="mt-12 bg-[#8C7763] text-white px-10 py-5 rounded-full text-[18px] hover:bg-[#756250] hover:scale-105 transition-all duration-500 shadow-[0_12px_30px_rgba(90,70,50,0.18)]">
-            View Transformations
-          </button>
+          <button
+  onClick={() =>
+    document
+      .getElementById("more-transformations")
+      ?.scrollIntoView({ behavior: "smooth" })
+  }
+  className="mt-12 bg-[#8C7763] text-white px-10 py-5 rounded-full text-[18px] hover:bg-[#756250] hover:scale-105 transition-all duration-500 shadow-[0_12px_30px_rgba(90,70,50,0.18)]">
+  View Transformations
+</button>
 
           {/* ARCH IMAGE */}
           <motion.div
@@ -224,7 +230,9 @@ function Transformations() {
       </section>
 
       {/* MORE TRANSFORMATIONS */}
-      <section className="px-6 md:px-16 pb-32">
+      <section 
+       id="more-transformations"
+      className="px-6 md:px-16 pb-32">
 
         <p className="text-[#7B726A] tracking-[6px] text-[13px] uppercase mb-12">
           More Transformations

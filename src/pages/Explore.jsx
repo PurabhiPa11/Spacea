@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import { Heart, Users, ArrowRight } from "lucide-react";
+import { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
 
 /* HERO IMAGES */
@@ -24,6 +26,15 @@ import indiaMap from "../assets/india-map.png";
 import recommendationImg from "../assets/recommendation.jpg";
 
 function Explore() {
+  const navigate = useNavigate();
+  const [favorites, setFavorites] = useState([]);
+  const toggleFavorite = (index) => {
+  if (favorites.includes(index)) {
+    setFavorites(favorites.filter((item) => item !== index));
+  } else {
+    setFavorites([...favorites, index]);
+  }
+};
   return (
     <motion.div
   className="bg-[#1E4A3B] min-h-screen"
@@ -111,9 +122,11 @@ function Explore() {
                 </p>
               </div>
 
-              <button className="w-full lg:w-[90px] h-[60px] lg:h-[90px] rounded-full bg-[#163B2F] flex items-center justify-center mr-5 hover:scale-105 transition-all duration-300">
-                <ArrowRight className="text-white w-7 h-7" />
-              </button>
+             <button
+             onClick={() => navigate("/start-planning")}
+             className="w-full lg:w-[90px] h-[60px] lg:h-[90px] rounded-full bg-[#163B2F] flex items-center justify-center mr-5 hover:scale-105 transition-all duration-300">
+            <ArrowRight className="text-white w-7 h-7" />
+            </button>
             </div>
 
             {/* TAGS */}
@@ -158,11 +171,6 @@ function Explore() {
                 Find your perfect escape
               </h2>
             </div>
-
-            <button className="text-[#2D2A27] flex items-center gap-3 hover:gap-5 transition-all duration-300">
-              View all categories
-              <ArrowRight size={18} />
-            </button>
           </div>
 
           {/* CATEGORY CARDS */}
@@ -240,11 +248,6 @@ function Explore() {
                 Handpicked for you
               </h2>
             </div>
-
-            <button className="text-[#2D2A27] flex items-center gap-3 hover:gap-5 transition-all duration-300">
-              View all stays
-              <ArrowRight size={18} />
-            </button>
           </div>
 
           {/* STAY CARDS */}
@@ -289,8 +292,13 @@ function Explore() {
                     className="w-full h-[320px] object-cover hover:scale-105 transition-all duration-700"
                   />
 
-                  <button className="absolute top-5 right-5 w-[42px] h-[42px] rounded-full bg-white flex items-center justify-center">
-                    <Heart size={18} />
+                  <button
+                  onClick={() => toggleFavorite(index)}
+                  className="absolute top-5 right-5 w-[42px] h-[42px] rounded-full bg-white flex items-center justify-center">
+                  <Heart
+                  size={18}
+                  fill={favorites.includes(index) ? "#ef4444" : "none"}
+                  color={favorites.includes(index) ? "#ef4444" : "black"}/>
                   </button>
                 </div>
 
@@ -392,10 +400,12 @@ function Explore() {
       budget and travel mood.
     </p>
 
-    <button className="mt-10 bg-[#163B2F] hover:bg-[#0E241C] transition-all duration-300 text-white px-8 py-5 rounded-full flex items-center gap-4">
-      Get Recommendations
-      <ArrowRight size={18} />
-    </button>
+    <Link
+  to="/start-planning"
+  className="mt-10 bg-[#163B2F] hover:bg-[#0E241C] transition-all duration-300 text-white px-8 py-5 rounded-full flex items-center gap-4 w-fit">
+  Get Recommendations
+  <ArrowRight size={18} />
+</Link>
 
   </div>
 </div>

@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import contactBg from "../assets/contact.jpg";
 import Navbar from "../components/Navbar";
 
@@ -80,9 +81,11 @@ function Contact() {
               Transform your property into an unforgettable guest experience through curated styling and intentional design.
             </p>
 
+            <Link to="/start-planning">
             <button className="mt-10 bg-[#8FA7BA] text-white px-8 py-4 rounded-full text-[18px] hover:bg-[#7D93A3] hover:scale-105 transition-all duration-500 shadow-[0_10px_30px_rgba(95,116,133,0.18)]">
-              Book Consultation
+            Book Consultation
             </button>
+            </Link>
 
           </div>
 

@@ -84,9 +84,16 @@ function StartPlanning() {
               transformation plan.
             </p>
 
-            <button className="mt-12 bg-[#163B2F] text-white px-10 py-5 rounded-full hover:scale-105 transition-all duration-300 shadow-[0_15px_35px_rgba(0,0,0,0.08)]">
-              Begin Project
-            </button>
+            <button
+  onClick={() =>
+    document
+      .getElementById("consultation-form")
+      ?.scrollIntoView({ behavior: "smooth" })
+  }
+  className="mt-12 bg-[#163B2F] text-white px-10 py-5 rounded-full hover:scale-105 transition-all duration-300 shadow-[0_15px_35px_rgba(0,0,0,0.08)]"
+>
+  Begin Project
+</button>
 
           </div>
 
@@ -318,7 +325,9 @@ function StartPlanning() {
 
       {/* CONSULTATION FORM */}
 
-      <section className="px-8 md:px-16 pb-28">
+      <section 
+        id="consultation-form"
+      className="px-8 md:px-16 pb-28">
 
         <div className="bg-[#FBF8F3] rounded-[40px] p-8 md:p-16 shadow-[0_20px_50px_rgba(0,0,0,0.06)]">
 
@@ -426,13 +435,15 @@ function StartPlanning() {
             review and recommend.
           </p>
 
-          <button className="mt-12 bg-white text-[#163B2F] px-10 py-5 rounded-full hover:scale-105 transition-all duration-300 flex items-center gap-3 mx-auto">
-
-            Request Consultation
-
-            <ArrowRight size={18} />
-
-          </button>
+          <button
+  onClick={() =>
+    document
+      .getElementById("consultation-form")
+      ?.scrollIntoView({ behavior: "smooth" })}
+  className="mt-12 bg-white text-[#163B2F] px-10 py-5 rounded-full hover:scale-105 transition-all duration-300 flex items-center gap-3 mx-auto">
+  Request Consultation
+  <ArrowRight size={18} />
+</button>
 
         </div>
 
@@ -444,7 +455,7 @@ function StartPlanning() {
 
         <div className="fixed bottom-4 left-4 right-4 md:left-auto md:right-8 bg-[#163B2F] text-white px-6 py-4 rounded-[20px] shadow-[0_10px_30px_rgba(0,0,0,0.15)] z-50">
 
-          Project submitted successfully ✨
+          Project submitted successfully.
 
         </div>
 
