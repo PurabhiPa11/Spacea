@@ -13,6 +13,7 @@ import style4 from "../assets/style4.jpg";
 function StartPlanning() {
 
   const [submitted, setSubmitted] = useState(false);
+  const [files, setFiles] = useState([]);
 
   const [formData, setFormData] = useState({
     name: "",
@@ -46,6 +47,17 @@ function StartPlanning() {
       setSubmitted(false);
     }, 5000);
   };
+
+  const handleFileUpload = (e) => {
+  const selectedFiles = Array.from(e.target.files);
+
+  const filePreviews = selectedFiles.map((file) => ({
+    file,
+    preview: URL.createObjectURL(file),
+  }));
+
+  setFiles(filePreviews);
+};
 
   return (
     <motion.div
@@ -282,9 +294,45 @@ function StartPlanning() {
             your transformation strategy.
           </p>
 
-          <button className="mt-10 border border-[#163B2F] text-[#163B2F] px-8 py-4 rounded-full hover:bg-[#163B2F] hover:text-white transition-all duration-300">
-            Browse Files
-          </button>
+         <label className="mt-10 inline-block cursor-pointer border border-[#163B2F] text-[#163B2F] px-8 py-4 rounded-full hover:bg-[#163B2F] hover:text-white transition-all duration-300">
+
+         Browse Files
+
+         <input
+         type="file"
+         multiple
+         accept="image/*"
+         className="hidden"
+         onChange={handleFileUpload}/>
+
+</label>
+
+        {files.length > 0 && (
+
+  <div className="mt-10">
+
+    <p className="text-[#6D665F] mb-6">
+      {files.length} file(s) selected
+    </p>
+
+    <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+
+      {files.map((item, index) => (
+
+        <img
+          key={index}
+          src={item.preview}
+          alt=""
+          className="w-full h-[140px] md:h-[180px] object-cover rounded-[20px]"
+        />
+
+      ))}
+
+    </div>
+
+  </div>
+
+)}
 
         </div>
 
@@ -464,5 +512,4 @@ function StartPlanning() {
     </motion.div>
   );
 }
-
 export default StartPlanning;

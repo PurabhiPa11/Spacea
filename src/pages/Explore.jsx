@@ -83,16 +83,16 @@ function Explore() {
              w-full
              max-w-[860px]
              bg-[#FBF8F3]
-             rounded-[30px] lg:rounded-full
+             rounded-[24px] lg:rounded-[999px]
              p-6
-             lg:p-0
+             lg:py-4 lg:px-0
              flex
              flex-col
              lg:flex-row
              gap-6
              lg:gap-0
              shadow-[0_15px_35px_rgba(0,0,0,0.08)]">
-              <div className="flex-1 px-10">
+              <div className="flex-1 px-10 flex flex-col justify-center">
                 <p className="text-[#2D2A27] text-[18px] font-medium">
                   Where to?
                 </p>
@@ -101,19 +101,19 @@ function Explore() {
                 </p>
               </div>
 
-              <div className="hidden lg:block w-[1px] h-[60px] bg-[#DDD5CA]" />
+              <div className="hidden lg:block self-stretch w-[1px] bg-[#DDD5CA]" />
 
-              <div className="flex-1 px-10">
-                <p className="text-[#2D2A27] text-[18px] font-medium">
-                  Check in – Check out
-                </p>
+              <div className="flex-[1.3] px-10 flex flex-col justify-center">
+                <p className="text-[#2D2A27] text-[18px] font-medium whitespace-nowrap">
+                 Check in – Check out
+                 </p>
                 <p className="text-[#77716A] text-[15px] mt-1">
                   Add dates
                 </p>
               </div>
 
-              <div className="hidden lg:block w-[1px] h-[60px] bg-[#DDD5CA]" />
-              <div className="flex-1 px-10">
+              <div className="hidden lg:block self-stretch w-[1px] bg-[#DDD5CA]" />
+              <div className="flex-1 px-10 flex flex-col justify-center">
                 <p className="text-[#2D2A27] text-[18px] font-medium">
                   Guests
                 </p>
@@ -124,8 +124,8 @@ function Explore() {
 
              <button
              onClick={() => navigate("/start-planning")}
-             className="w-full lg:w-[90px] h-[60px] lg:h-[90px] rounded-full bg-[#163B2F] flex items-center justify-center mr-5 hover:scale-105 transition-all duration-300">
-            <ArrowRight className="text-white w-7 h-7" />
+             className="w-full lg:w-[72px] h-[60px] lg:h-[72px] rounded-full bg-[#163B2F] flex items-center justify-center mr-5 hover:scale-105 transition-all duration-300">
+            <ArrowRight className="text-white w-6 h-6" />
             </button>
             </div>
 

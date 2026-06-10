@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
@@ -28,26 +29,45 @@ function Navbar() {
             Home
           </Link>
 
-          <Link
-            to="/explore"
-            className="hover:text-[#4F6473] transition-all duration-300"
-          >
-            Explore
-          </Link>
+          <NavLink
+  to="/explore"
+  className={({ isActive }) =>
+    `transition-all duration-300 ${
+      isActive
+        ? "text-[#4F6473] border-b-2 border-[#4F6473] pb-1"
+        : "text-[#6B7B88]"
+    }`
+  }
+>
+  Explore
+</NavLink>
 
-          <Link
-            to="/transformations"
-            className="hover:text-[#4F6473] transition-all duration-300"
-          >
-            Transformations
-          </Link>
+          <NavLink
+  to="/transformations"
+  className={({ isActive }) =>
+    `transition-all duration-300 ${
+      isActive
+        ? "text-[#4F6473] border-b-2 border-[#4F6473] pb-1"
+        : "text-[#6B7B88]"
+    }`
+  }
+>
+  Transformations
+</NavLink>
 
-          <Link
-            to="/contact"
-            className="hover:text-[#4F6473] transition-all duration-300"
-          >
-            Contact
-          </Link>
+          <NavLink
+  to="/contact"
+  className={({ isActive }) =>
+    `transition-all duration-300 ${
+      isActive
+        ? "text-[#4F6473] border-b-2 border-[#4F6473] pb-1"
+        : "text-[#6B7B88]"
+    }`
+  }
+>
+  Contact
+</NavLink>
+
 
         </div>
 

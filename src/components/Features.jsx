@@ -72,7 +72,7 @@ function Features() {
 
        {/* EDITORIAL CARD */}
 
-<div className="w-[240px] h-[270px] rounded-[32px] bg-[#EEF3F6] shadow-[0_20px_50px_rgba(0,0,0,0.10)] hover:shadow-[0_30px_70px_rgba(95,116,133,0.22)] p-8 flex flex-col justify-center gap-8 cursor-pointer hover:translate-y-[-6px] transition-all duration-500">
+<div className="w-[240px] h-[240px] rounded-[32px] bg-[#EEF3F6] shadow-[0_20px_50px_rgba(0,0,0,0.10)] hover:shadow-[0_30px_70px_rgba(95,116,133,0.22)] p-8 flex flex-col justify-center gap-8 cursor-pointer hover:translate-y-[-6px] transition-all duration-500">
 
   <div className="w-[62px] h-[62px] rounded-full border border-[#9BAFBE] flex items-center justify-center text-[#7D93A3] text-[26px]">
     ✦
