@@ -10,6 +10,7 @@ Spacea is an AI-powered Air-BNBinterior design platform that helps users discove
 - Modern and responsive user interface
 - Contact and inquiry section
 - Interactive design inspiration gallery
+- Video demo modal
 
 ## Tech Stack
 
@@ -17,6 +18,9 @@ Spacea is an AI-powered Air-BNBinterior design platform that helps users discove
 - Vite
 - Tailwind CSS
 - JavaScript
+- Framer Motion
+- Vercel
+- React Router
 
 ## Project Structure
 
