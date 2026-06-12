@@ -82,7 +82,7 @@ function Contact() {
             </p>
 
             <Link to="/start-planning">
-            <button className="mt-10 bg-[#8FA7BA] text-white px-8 py-4 rounded-full text-[18px] hover:bg-[#7D93A3] hover:scale-105 transition-all duration-500 shadow-[0_10px_30px_rgba(95,116,133,0.18)]">
+            <button className="mt-10 bg-[#8A7767] text-white px-8 py-4 rounded-full text-[18px] hover:bg-[#746454] hover:scale-105 transition-all duration-500 shadow-[0_10px_30px_rgba(95,116,133,0.18)]">
             Book Consultation
             </button>
             </Link>
@@ -126,16 +126,16 @@ function Contact() {
         {/* CONSULTATION CARD */}
         <section className="px-6 md:px-16 pb-24 md:pb-28">
 
-          <div className="w-full max-w-[1180px] mx-auto rounded-[42px] bg-[#E4EBF0]/90 backdrop-blur-[10px] shadow-[0_24px_60px_rgba(0,0,0,0.06)] p-8 md:p-16 flex flex-col lg:flex-row justify-between gap-14 md:gap-20">
+          <div className="w-full max-w-[1180px] mx-auto rounded-[42px] bg-[ #F7F5F1]/90 backdrop-blur-[10px] shadow-[0_24px_60px_rgba(0,0,0,0.06)] p-8 md:p-16 flex flex-col lg:flex-row justify-between gap-14 md:gap-20">
 
             {/* LEFT SIDE */}
             <div className="max-w-[420px]">
 
-              <h2 className="text-[48px] md:text-[72px] leading-[95%] tracking-[-2px] text-[#5B5551] font-['Playfair_Display'] font-medium">
+              <h2 className="text-[48px] md:text-[72px] leading-[95%] tracking-[-2px] text-[#5C534D] font-['Playfair_Display'] font-medium">
                 Design spaces your guests remember.
               </h2>
 
-              <p className="text-[#707B84] text-[17px] md:text-[18px] leading-[30px] mt-8 md:mt-10">
+              <p className="text-[#7B746D] text-[17px] md:text-[18px] leading-[30px] mt-8 md:mt-10">
                 Tell us about your property, aesthetic goals, and guest experience vision.
               </p>
 
@@ -144,7 +144,7 @@ function Contact() {
             {/* RIGHT SIDE */}
             <div className="w-full max-w-[430px]">
 
-              <h3 className="text-[#5B5551] text-[28px] md:text-[30px] font-medium mb-8 md:mb-10">
+              <h3 className="text-[#5C534D] text-[28px] md:text-[30px] font-medium mb-8 md:mb-10">
                 Start Your Consultation
               </h3>
 
@@ -159,7 +159,7 @@ function Contact() {
                   value={formData.name}
                   onChange={handleChange}
                   placeholder="Your Name"
-                  className="h-[68px] rounded-[18px] bg-[#E7EEF3]/45 border border-[#D3DDE5] px-6 text-[#5B5551] placeholder:text-[#8B99A4] outline-none hover:border-[#AFC0CD] focus:border-[#8FA7BA] focus:bg-white/70 transition-all duration-300"
+                  className="h-[68px] rounded-[18px] bg-[#FCFBF9]/45 border border-[#E4DED6] px-6 text-[#5C534D] placeholder:text-[#8F8B85] outline-none hover:border-[#CDBEAF] focus:border-[#8A7767] focus:bg-white/70 transition-all duration-300"
                 />
 
                 <input
@@ -168,7 +168,7 @@ function Contact() {
                   value={formData.email}
                   onChange={handleChange}
                   placeholder="Your Email"
-                  className="h-[68px] rounded-[18px] bg-[#E7EEF3]/45 border border-[#D3DDE5] px-6 text-[#5B5551] placeholder:text-[#8B99A4] outline-none hover:border-[#AFC0CD] focus:border-[#8FA7BA] focus:bg-white/70 transition-all duration-300"
+                  className="h-[68px] rounded-[18px] bg-[#FCFBF9]/45 border border-[#E4DED6] px-6 text-[#5C534D] placeholder:text-[#8F8B85] outline-none hover:border-[#CDBEAF] focus:border-[#8A7767] focus:bg-white/70 transition-all duration-300"
                 />
 
                 <input
@@ -177,7 +177,7 @@ function Contact() {
                   value={formData.property}
                   onChange={handleChange}
                   placeholder="Property Type"
-                  className="h-[68px] rounded-[18px] bg-[#E7EEF3]/45 border border-[#D3DDE5] px-6 text-[#5B5551] placeholder:text-[#8B99A4] outline-none hover:border-[#AFC0CD] focus:border-[#8FA7BA] focus:bg-white/70 transition-all duration-300"
+                  className="h-[68px] rounded-[18px] bg-[#FCFBF9]/45 border border-[#E4DED6] px-6 text-[#5C534D] placeholder:text-[#8F8B85] outline-none hover:border-[#CDBEAF] focus:border-[#8A7767] focus:bg-white/70 transition-all duration-300"
                 />
 
                 <input
@@ -186,7 +186,7 @@ function Contact() {
                   value={formData.budget}
                   onChange={handleChange}
                   placeholder="Budget Range"
-                  className="h-[68px] rounded-[18px] bg-[#E7EEF3]/45 border border-[#D3DDE5] px-6 text-[#5B5551] placeholder:text-[#8B99A4] outline-none hover:border-[#AFC0CD] focus:border-[#8FA7BA] focus:bg-white/70 transition-all duration-300"
+                  className="h-[68px] rounded-[18px] bg-[#FCFBF9]/45 border border-[#E4DED6] px-6 text-[#5C534D] placeholder:text-[#8F8B85] outline-none hover:border-[#CDBEAF] focus:border-[#8A7767] focus:bg-white/70 transition-all duration-300"
                 />
 
                 <textarea
@@ -194,17 +194,17 @@ function Contact() {
                   value={formData.vision}
                   onChange={handleChange}
                   placeholder="Tell us about your vision"
-                  className="h-[180px] rounded-[18px] bg-[#E7EEF3]/45 border border-[#D3DDE5] p-6 text-[#5B5551] placeholder:text-[#8B99A4] outline-none resize-none hover:border-[#AFC0CD] focus:border-[#8FA7BA] focus:bg-white/70 transition-all duration-300"
+                  className="h-[180px] rounded-[18px] bg-[#FCFBF9]/45 border border-[#E4DED6] p-6 text-[#5C534D] placeholder:text-[#8F8B85] outline-none resize-none hover:border-[#CDBEAF] focus:border-[#8A7767] focus:bg-white/70 transition-all duration-300"
                 ></textarea>
 
                 <button
                   type="submit"
-                  className="mt-2 w-fit bg-[#8FA7BA] text-white px-8 py-4 rounded-full text-[18px] hover:bg-[#7D93A3] hover:scale-105 transition-all duration-500 shadow-[0_10px_30px_rgba(95,116,133,0.18)]"
+                  className="mt-2 w-fit bg-[#8A7767] text-white px-8 py-4 rounded-full text-[18px] hover:bg-[#746454] hover:scale-105 transition-all duration-500 shadow-[0_10px_30px_rgba(95,116,133,0.18)]"
                 >
                   Send Inquiry
                 </button>
 
-                <p className="text-[#8B99A4] text-[14px] mt-2">
+                <p className="text-[#9A9189] text-[14px] mt-2">
                   We’ll reach out within 24 hours.
                 </p>
 
@@ -220,7 +220,7 @@ function Contact() {
 
       {/* SUCCESS POPUP */}
       {submitted && (
-        <div className="fixed bottom-8 right-8 bg-[#8FA7BA] text-white px-6 py-4 rounded-[20px] shadow-[0_10px_30px_rgba(95,116,133,0.18)] z-50 animate-pulse">
+        <div className="fixed bottom-8 right-8 bg-[#8A7767] text-white px-6 py-4 rounded-[20px] shadow-[0_10px_30px_rgba(95,116,133,0.18)] z-50 animate-pulse">
           Response submitted successfully ✨
         </div>
       )}
