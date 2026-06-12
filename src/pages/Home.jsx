@@ -5,7 +5,7 @@ import Aesthetic from "../components/Aesthetic";
 
 function Home() {
   return (
-    <div className="bg-gradient-to-b from-[#E3EBF0] to-[#DCE5EB] min-h-screen">
+    <div className="bg-gradient-to-b from-[#EDE4D8] to-[#E7DDD1] min-h-screen">
        <div className="max-w-[1440px] mx-auto">
 
       <Navbar />

@@ -74,7 +74,7 @@ function Navbar() {
         {/* Desktop Button */}
         <Link
           to="/start-planning"
-          className="hidden md:block bg-[#8FA7BA] text-white px-6 py-3 rounded-[999px] hover:bg-[#7A93A7] hover:scale-105 transition-all duration-300"
+          className="hidden md:block bg-[#6E7A6A] text-white px-6 py-3 rounded-[999px] hover:bg-[#5C6758] hover:scale-105 transition-all duration-300"
         >
           Start Planning
         </Link>
@@ -128,7 +128,7 @@ function Navbar() {
           <Link
             to="/start-planning"
             onClick={() => setMenuOpen(false)}
-            className="bg-[#8FA7BA] text-white px-6 py-3 rounded-[999px] hover:bg-[#7A93A7] transition-all duration-300"
+            className="bg-[#6E7A6A] text-white px-6 py-3 rounded-[999px] hover:bg-[#5C6758] transition-all duration-300"
           >
             Start Planning
           </Link>

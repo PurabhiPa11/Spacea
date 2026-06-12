@@ -6,11 +6,11 @@ function Features() {
   return (
     <section className="px-16 pb-32">
     
-      <p className="text-[#7C8A95] tracking-[4px] text-[13px] uppercase">
+      <p className="text-[#7B746D] tracking-[4px] text-[13px] uppercase">
         Our Services
       </p>
 
-      <h2 className="text-[56px] leading-[115%] text-[#5B5551] font-['Playfair_Display'] mt-6 max-w-[800px]">
+      <h2 className="text-[56px] leading-[115%] text-[#5C534D] font-['Playfair_Display'] mt-6 max-w-[800px]">
         Everything You Need To Transform Your Property
       </h2>
 
@@ -72,15 +72,15 @@ function Features() {
 
        {/* EDITORIAL CARD */}
 
-<div className="w-[240px] h-[240px] rounded-[32px] bg-[#EEF3F6] shadow-[0_20px_50px_rgba(0,0,0,0.10)] hover:shadow-[0_30px_70px_rgba(95,116,133,0.22)] p-8 flex flex-col justify-center gap-8 cursor-pointer hover:translate-y-[-6px] transition-all duration-500">
+<div className="w-[240px] h-[240px] rounded-[32px] bg-[#F3ECE3] shadow-[0_20px_50px_rgba(0,0,0,0.10)] hover:shadow-[0_30px_70px_rgba(95,116,133,0.22)] p-8 flex flex-col justify-center gap-8 cursor-pointer hover:translate-y-[-6px] transition-all duration-500">
 
-  <div className="w-[62px] h-[62px] rounded-full border border-[#9BAFBE] flex items-center justify-center text-[#7D93A3] text-[26px]">
+  <div className="w-[62px] h-[62px] rounded-full border border-[#B9A89A] flex items-center justify-center text-[#8B7765] text-[26px]">
     ✦
   </div>
 
   <div>
 
-    <p className="text-[#6E7E8A] text-[24px] leading-[135%] font-['Playfair_Display']">
+    <p className="text-[#5C534D] text-[24px] leading-[135%] font-['Playfair_Display']">
       Tailored for every space, designed for your guests.
     </p>
 

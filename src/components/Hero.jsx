@@ -18,14 +18,14 @@ function Hero() {
         {/* LEFT CONTENT */}
 
         <div className="w-full max-w-[600px]">
-          <h1 className="text-[36px] sm:text-[48px] md:text-[78px] leading-[100%] md:leading-[95%] text-[#5B5551] font-['Playfair_Display'] tracking-[-2px]">
+          <h1 className="text-[36px] sm:text-[48px] md:text-[78px] leading-[100%] md:leading-[95%] text-[#5C534D] font-['Playfair_Display'] tracking-[-2px]">
             Transform <br />
             Properties <br />
             Into <br />
             Experiences
           </h1>
 
-          <p className="mt-6 md:mt-8 text-[#707B84] text-[18px] md:text-[20px] leading-[30px] md:leading-[32px] max-w-[500px]">
+          <p className="mt-6 md:mt-8 text-[#7B746D] text-[18px] md:text-[20px] leading-[30px] md:leading-[32px] max-w-[500px]">
             Luxury Airbnb transformation platform helping owners redesign,
             optimize, and elevate their spaces.
           </p>
@@ -34,7 +34,7 @@ function Hero() {
             {/* Explore Button */}
 
             <Link to="/explore">
-              <button className="bg-[#5F7485] text-white px-8 py-4 rounded-[999px] text-[18px] hover:bg-[#4F6473] hover:scale-105 transition-all duration-300 shadow-[0_10px_30px_rgba(95,116,133,0.18)]">
+              <button className="bg-[#6E7A6A] text-white px-8 py-4 rounded-[999px] text-[18px] hover:bg-[#5C6758] hover:scale-105 transition-all duration-300 shadow-[0_10px_30px_rgba(95,116,133,0.18)]">
                 Explore Spaces
               </button>
             </Link>
@@ -43,7 +43,7 @@ function Hero() {
 
             <button
               onClick={() => setShowVideo(true)}
-              className="bg-[#D7E2E9] text-[#5F7485] px-8 py-4 rounded-[999px] text-[18px] hover:bg-[#C5D5DF] hover:scale-105 transition-all duration-300 shadow-[0_10px_30px_rgba(95,116,133,0.18)]"
+              className="bg-[#E4D8CA] text-[#5C534D] px-8 py-4 rounded-[999px] text-[18px] hover:bg-[#D9CCBD] hover:scale-105 transition-all duration-300 shadow-[0_10px_30px_rgba(95,116,133,0.18)]"
             >
               Watch Demo
             </button>

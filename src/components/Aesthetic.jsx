@@ -7,11 +7,11 @@ function Aesthetic() {
   return (
     <section className="px-16 pb-32">
 
-      <p className="text-[#7C8A95] tracking-[4px] text-[13px] uppercase">
+      <p className="text-[#7B746D] tracking-[4px] text-[13px] uppercase">
         Choose Your Aesthetic
       </p>
 
-      <h2 className="text-[56px] leading-[115%] text-[#5B5551] font-['Playfair_Display'] mt-6">
+      <h2 className="text-[56px] leading-[115%] text-[#5C534D] font-['Playfair_Display'] mt-6">
         Design Your Space, <br />
         Your Way
       </h2>
